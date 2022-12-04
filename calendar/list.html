@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>行事曆</title>
+    <link rel='stylesheet'
+        href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css' />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-12 mx-auto">
+                    <h1>校園行事曆</h1>
+                    <div id="calList">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="chk_Default"
+                                value="src=NTQyODVmYjYyODAwNWQ2NGI4NmUwZjkxNDM5NWU1MGMzOTllZjBhYTU2MDg4MjZkNzZiOWYyMzM4NGJjNzkwOUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%238E24AA&amp;src=Y2NhOWMzYTI2ODdjMjk2MWNlZjAyYmRhYTEyNDIyNWM2YjljMGZjMWUyYzE4MDU4YjZjNzcyOWI2MGQwMDliZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%239E69AF&amp;src=M2IxNTc3NWYzN2I5MzExNDg0ZjFjODY4NzRjZWEyMjI1ZTUwNThhZjEyMWVhMjEwZmQ2OTBjNmY0NmM5ZjEyMkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23EF6C00&amp;src=NjRjOWZkODEyNWE4MGFjODU2YTVmOGFlYWVmYThhMmRmMjYxNWZmNjU3NDRjNWQyNjlhNjI1NDJiMTM1ODYxYUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%237CB342&amp;src=MTkwYzhjOGE0NWMxY2E5ZTdhYjA3MmQxNzg1OWIxYTA1MDVkMmI4YmU4ZmVjMTI1NzliNGU0MWQ5MzY1MTEyYUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23795548&amp;"
+                                Checked="checked">
+                            <label class="form-check-label" for="chk_Default">全部</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="chk_Student"
+                                value="src=NTQyODVmYjYyODAwNWQ2NGI4NmUwZjkxNDM5NWU1MGMzOTllZjBhYTU2MDg4MjZkNzZiOWYyMzM4NGJjNzkwOUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%238E24AA&amp;">
+                            <label class="form-check-label" for="chk_Student">教務處</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="chk_Teacher"
+                                value="src=Y2NhOWMzYTI2ODdjMjk2MWNlZjAyYmRhYTEyNDIyNWM2YjljMGZjMWUyYzE4MDU4YjZjNzcyOWI2MGQwMDliZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%239E69AF&amp;">
+                            <label class="form-check-label" for="chk_Teacher">學務處</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="chk_Screening"
+                                value="src=M2IxNTc3NWYzN2I5MzExNDg0ZjFjODY4NzRjZWEyMjI1ZTUwNThhZjEyMWVhMjEwZmQ2OTBjNmY0NmM5ZjEyMkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23EF6C00&amp;">
+                            <label class="form-check-label" for="chk_Screening">總務處</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="chk_Training"
+                                value="src=NjRjOWZkODEyNWE4MGFjODU2YTVmOGFlYWVmYThhMmRmMjYxNWZmNjU3NDRjNWQyNjlhNjI1NDJiMTM1ODYxYUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%237CB342&amp;">
+                            <label class="form-check-label" for="chk_Training">輔導室</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="chk_Preschool"
+                                value="src=MTkwYzhjOGE0NWMxY2E5ZTdhYjA3MmQxNzg1OWIxYTA1MDVkMmI4YmU4ZmVjMTI1NzliNGU0MWQ5MzY1MTEyYUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23795548&amp;">
+                            <label class="form-check-label" for="chk_Preschool">幼兒園</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <a class="btn btn-primary" href="javascript:;" onclick="showCalendar();">確定</a>
+                        </div>
+                    </div>
+                    <div class="embed-responsive embed-responsive-16by9 mt-5">
+                        <iframe class="embed-responsive-item" id="ifCal"
+                            src="https://calendar.google.com/calendar/embed?showTitle=0&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FTaipei&amp;src=NTQyODVmYjYyODAwNWQ2NGI4NmUwZjkxNDM5NWU1MGMzOTllZjBhYTU2MDg4MjZkNzZiOWYyMzM4NGJjNzkwOUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%238E24AA&amp;src=Y2NhOWMzYTI2ODdjMjk2MWNlZjAyYmRhYTEyNDIyNWM2YjljMGZjMWUyYzE4MDU4YjZjNzcyOWI2MGQwMDliZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%239E69AF&amp;src=M2IxNTc3NWYzN2I5MzExNDg0ZjFjODY4NzRjZWEyMjI1ZTUwNThhZjEyMWVhMjEwZmQ2OTBjNmY0NmM5ZjEyMkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23EF6C00&amp;src=NjRjOWZkODEyNWE4MGFjODU2YTVmOGFlYWVmYThhMmRmMjYxNWZmNjU3NDRjNWQyNjlhNjI1NDJiMTM1ODYxYUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%237CB342&amp;src=MTkwYzhjOGE0NWMxY2E5ZTdhYjA3MmQxNzg1OWIxYTA1MDVkMmI4YmU4ZmVjMTI1NzliNGU0MWQ5MzY1MTEyYUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23795548&amp;"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mx-auto">
+                    <h1>處室報告</h1>
+                      <div class="embed-responsive embed-responsive-16by9 mt-5">
+                        <iframe class="embed-responsive-item" id="ifdocu"
+                            src="https://script.google.com/macros/s/AKfycbzpYSfXUKpfXznlM7aFbDcfRjQbVHrozOz_zHX6eQmHwz8GjlbrCtnAo-Lv1JZbyVIUmQ/exec"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></scrip
+    <script src="js/main.js"></script>
+</body>
+
+</html>
